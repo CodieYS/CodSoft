@@ -1,0 +1,220 @@
+/* Style the header */
+#header {
+    background-color: #634effdb;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative; 
+}
+
+.logo {
+    height: 70px;
+    max-width: 70px;
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+}
+
+.profile-pic {
+    max-width: 150px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#header img {
+    max-width: 150px;
+    border-radius: 50%;
+}
+
+/* Style the about section */
+#about {
+    padding: 0.5rem 0;
+    background-color: #f0f0f0;
+}
+
+#about img {
+    max-width: 300px;
+    float: left;
+    margin-right: 2rem;
+}
+
+/* Style project showcases */
+.project {
+    display: flex;
+    align-items: center;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+}
+
+.project-image {
+    flex: 1;
+    max-width: 300px;
+    margin-right: 2rem;
+}
+
+.project-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.project-details {
+    flex: 2;
+}
+
+.project h3 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.project p {
+    margin-top: 0.5rem;
+    color: #777;
+}
+
+.project a {
+    display: inline-block;
+    background-color: #333;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+}
+
+.project a:hover {
+    background-color: #555;
+}
+
+
+/* Style skills section */
+#skills {
+    background-color: #f8f8f8;
+    padding: 0.5rem 0;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.skill:hover {
+    transform: translateY(-5px);
+}
+
+.skill img {
+    max-width: 70px;
+    margin-bottom: 1rem;
+}
+
+.skill p {
+    margin: 0;
+    font-weight: bold;
+}
+
+/* Style resume section */
+#rsm {
+    background-color: #f8f8f8;
+    padding: 0.5rem 0;
+    
+}
+
+#rsm p {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.resume-preview {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;    
+}
+#ctct{
+    background-color: #f8f8f8;
+    padding: 0.5rem 0;
+}
+#ctct p{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#ftr {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+#header {
+    padding: 1rem 0;
+}
+
+/* Style project showcases for smaller screens */
+.project {
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-image img {
+    max-width: 100%;
+}
+
+
+.skills-list {
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+
+/* Add a media query for screens with a maximum width of 768px (typical mobile devices) */
+@media (max-width: 768px) {
+    /* Modify styles for mobile screens */
+    body {
+        font-size: 16px;
+    }
+    
+    #header h1 {
+        font-size: 24px;
+    }
+
+    .project {
+        margin: 1rem 0;
+    }
+
+    .skills-list {
+        align-items: center;
+    }
+    .logo{
+        height: 30px;
+    }
+    .profile{
+        object-fit: cover;
+        margin-bottom: 10px;
+        width: 100%;
+        display: inline;
+    }
+}
+
+

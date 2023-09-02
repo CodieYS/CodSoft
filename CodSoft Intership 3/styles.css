@@ -1,0 +1,99 @@
+* {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    margin-top: 40px;
+    background-color: #f6f0fa;
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#e3a9e5+8,c673c5+67,d39cd6+97 */
+background: rgb(227,169,229); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(227,169,229,1) 8%, rgba(198,115,197,1) 67%, rgba(211,156,214,1) 97%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(227,169,229,1) 8%,rgba(198,115,197,1) 67%,rgba(211,156,214,1) 97%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(227,169,229,1) 8%,rgba(198,115,197,1) 67%,rgba(211,156,214,1) 97%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e3a9e5', endColorstr='#d39cd6',GradientType=0 ); /* IE6-9 */
+    max-width: 300px;
+    height: auto;
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 35px;
+    border-radius: 33px;
+    user-select: none;
+  }
+#Calculation-area {
+    width: 100%;
+    margin: 3vh 0;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(2, minmax(40px, auto));
+    word-wrap: break-word;
+    padding-bottom: 20px;
+    border-bottom: 1px rgba(20, 20, 20, 0.116) solid;
+  }
+  
+  #Calculation-area .PresentInput {
+    text-align: right;
+    height: 8vh;
+    color: rgb(0, 0, 0);
+    font-size: xx-large;
+    line-height: 2;
+    word-wrap: break-word;
+  }
+  
+  #Calculation-area .OutputScreen {
+    text-align: right;
+    color: rgba(0, 0, 0, 0.87);
+    height: 7px;
+    line-height: 3;
+    font-size: larger;
+  }
+  .key-btns {
+    display: grid;
+    grid: repeat(5, 58px) / repeat(4, 67px);
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+  }
+  .key-btns button { 
+    outline: none;
+    border: none;
+    border-radius: 22px;
+    background-color: #7420beed;
+    color: #fff;
+    font-size: x-large;
+  }
+  
+  .key-btns .operator {
+    color: #000;
+    background: #effcff;
+    font-weight: bold;
+  }
+  .btn-n:hover {
+    background-color: #ff92fa;
+  }
+  
+  .operator:hover {
+    /* background-color: Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#fcecfc+15,fba6e1+85,fba6e1+93 */
+    background: rgb(252,236,252); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgb(252,236,252) 15%, rgb(251,166,225) 85%, rgb(251,166,225) 93%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgb(252,236,252) 15%,rgb(251,166,225) 85%,rgb(251,166,225) 93%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgb(252,236,252) 15%,rgb(251,166,225) 85%,rgb(251,166,225) 93%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcecfc', endColorstr='#fba6e1',GradientType=0 ); /* IE6-9 */
+    
+  }
+  
+  @media only screen and (max-width: 600px) {
+    body {
+      background-color: #131313;
+      align-items: flex-start;
+    }
+  }
+
+

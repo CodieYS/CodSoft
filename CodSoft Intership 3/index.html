@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>CodieYS</title>
+</head>
+<body>
+    <div class="container">
+    <section id="Calculation-area">
+        <div class="PresentInput"></div>
+        <div class="OutputScreen">0</div>
+    </section>
+
+    <section class="key-btns">
+    
+        <button type="button" class="btn-n operator" id="btn-clear" value="">C</button>
+        <button type="button" class="btn-n operator" id="btn-erase" value="⌫">⌫</button>
+
+        <button type="button" class="btn-n operator" data-operator="/">/</button>
+        <button type="button" class="btn-n operator" data-operator="%">%</button>
+        <button type="button" class="btn-n" data-number="7">7</button>
+        <button type="button" class="btn-n" data-number="8">8</button>
+        <button type="button" class="btn-n" data-number="9">9</button>
+        <button type="button" class="btn-n operator" data-operator="*">x</button>
+        <button type="button" class="btn-n" data-number="4">4</button>
+        <button type="button" class="btn-n" data-number="5">5</button>
+        <button type="button" class="btn-n" data-number="6">6</button>
+        <button type="button" class="btn-n operator" data-operator="-">-</button>
+        <button type="button" class="btn-n" data-number="1">1</button>
+        <button type="button" class="btn-n" data-number="2">2</button>
+        <button type="button" class="btn-n" data-number="3">3</button>
+        <button type="button" class="btn-n operator" data-operator="+">+</button>
+        <button type="button" class="btn-n" value="00">00</button>
+        <button type="button" class="btn-n" data-number="0">0</button>
+        <button type="button" class="btn-n" data-number=".">.</button>
+        <button type="button" class="btn-n operator" id="evaluate" data-operator="=">=</button>
+    </section>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>

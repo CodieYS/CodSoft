@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.Wallpaper{
+    width: 100%;
+    height: 100vh;
+    background-image: url('./bgimg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #54395f;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+
+}
+.logo{
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.Middle-content{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgb(255, 255, 255);
+}
+.Middle-content h1{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 70px;
+    margin-top: 80px;
+}
+.Middle-content p{
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+button{
+    font-size: 18px;
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #c5d1ff;
+    background:  transparent;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+span{
+    background: #77e1d7;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    color: #223e46;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    border: none;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
